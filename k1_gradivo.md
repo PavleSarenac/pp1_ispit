@@ -83,6 +83,9 @@
     1. Terminali gramatike će biti ulazni simboli NKA
     2. Neterminali gramatike će biti stanja NKA (proizvoljnom neterminalu gramatike `<A>` odgovara stanje NKA `A`), a startni neterminal gramatike će biti startno stanje NKA
     3. Proizvoljnoj smeni `<A> -> x<B>` odgovara prelaz NKA iz stanja `A` u stanje `B` za ulazni simbol `x`
-    4. Proizvoljna smena u gramatici `<A> -> epsilon` govori da je stanje NKA `A` stanje prihvatanja 
+    4. Proizvoljna smena u gramatici `<A> -> epsilon` govori da je stanje NKA `A` stanje prihvatanja
+- Data je gramatika i na osnovu nje treba <ins>**opisati jezik koji ta gramatika podržava**</ins> u obliku jednog izraza sačinjenog samo od terminala (npr. gramatika sa smenama `<S> -> 10<S>0; <S> -> a<A>; <A> -> b<A>; <A> -> a;` se može opisati kao L(G) = {(10)<sup>x</sup>ab<sup>y</sup>a0<sup>x</sup>, x >=0, y >= 0})
+    - Najbolji način da se ovi zadaci urade jeste da se razvije i iscrta sintaksno stablo za datu gramatiku i na osnovu njega formira izraz (nacrtati onoliko sintaksnih stabala koliko ima smena za startni neterminal kako bi se lakše i vizuelno razmotrile sve mogućnosti)
+    - Paziti da li eksponenti u izrazu mogu biti i 0, lako je zaboraviti na taj detalj
 
 ## Potisni automati
