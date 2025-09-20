@@ -87,5 +87,7 @@
 - Data je gramatika i na osnovu nje treba <ins>**opisati jezik koji ta gramatika podržava**</ins> u obliku jednog izraza sačinjenog samo od terminala (npr. gramatika sa smenama `<S> -> 10<S>0; <S> -> a<A>; <A> -> b<A>; <A> -> a;` se može opisati kao L(G) = {(10)<sup>x</sup>ab<sup>y</sup>a0<sup>x</sup>, x >=0, y >= 0})
     - Najbolji način da se ovi zadaci urade jeste da se razvije i iscrta sintaksno stablo za datu gramatiku i na osnovu njega formira izraz (nacrtati onoliko sintaksnih stabala koliko ima smena za startni neterminal kako bi se lakše i vizuelno razmotrile sve mogućnosti)
     - Paziti da li eksponenti u izrazu mogu biti i 0, lako je zaboraviti na taj detalj
+    - Takođe paziti ukoliko postoji više smena za startni neterminal obavezno razmotriti sve slučajeve, lako je zaboraviti i proveriti npr. samo prvu smenu umesto sve
+- Dat je jezik `L(G)` koji opisuje gramatiku i treba <ins>**konstruisati bezkontekstnu gramatiku**</ins> na osnovu njega, u suštini inverzan postupak u odnosu na postupak opisan iznad
 
 ## Potisni automati
